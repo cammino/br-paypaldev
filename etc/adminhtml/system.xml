@@ -275,50 +275,6 @@
                     <attribute type="activity_path">payment/paypalbr_expresscheckout/active</attribute>
                     <attribute type="displayIn">recommended_solutions</attribute>
 
-
-                    <group id="paypalbr_login_paypal" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="1">
-                        <label>Login with PayPal</label>
-                        <field id="active_login" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                            <label>Enable this Solution</label>
-                            <config_path>payment/paypalbr_expresscheckout/active_login</config_path>
-                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                            <comment>When activated, the customer will be able to use his PayPal account to login and pay faster</comment>
-                        </field>
-                    </group>
-
-                    <group id="paypalbr_login_paypal_minicart" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="1">
-                        <label>PayPal Shortcut</label>
-                        <field id="active_login_minicart" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                            <label>Enable this Solution</label>
-                            <config_path>payment/paypalbr_expresscheckout/active_login_minicart</config_path>
-                            <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                            <comment>When activated, the customer will be able to make the payment directly from the cart</comment>
-                        </field>
-                    </group>
-
-                    <group id="paypalbr_login_paypal_button" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="1">
-                        <label>Button settings</label>
-                        <field id="active_login_button" translate="label comment" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                            <label>Text of button</label>
-                            <config_path>payment/paypalbr_paypalplus/button_login_button</config_path>
-                            <source_model>PayPalBR\PayPal\Model\Config\Source\Button</source_model>
-                            <comment>Use this to customize the text of the button.</comment>
-                        </field>
-
-                        <field id="active_login_shape" translate="label comment" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                            <label>Format of button</label>
-                            <config_path>payment/paypalbr_paypalplus/button_login_shape</config_path>
-                            <source_model>PayPalBR\PayPal\Model\Config\Source\Shape</source_model>
-                            <comment>Use this to customize the format of button.</comment>
-                        </field>
-
-                        <field id="active_login_color" translate="label comment" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
-                            <label>Color of button</label>
-                            <config_path>payment/paypalbr_paypalplus/button_login_color</config_path>
-                            <source_model>PayPalBR\PayPal\Model\Config\Source\Color</source_model>
-                            <comment>Use this to customize the color of button.</comment>
-                        </field>
-
                     </group>
 
                     <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
