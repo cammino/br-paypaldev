@@ -85,6 +85,9 @@ class SalesOrderPlaceAfter implements ObserverInterface
      */
     protected $loggerHandler;
 
+    protected $sessionFactory;
+    protected $sessionFactory;
+
     /**
      * @param \Magento\Checkout\Model\Session $checkoutSession
      * @param \Psr\Log\LoggerInterface $logger

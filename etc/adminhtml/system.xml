@@ -275,7 +275,6 @@
                     <attribute type="activity_path">payment/paypalbr_expresscheckout/active</attribute>
                     <attribute type="displayIn">recommended_solutions</attribute>
 
-                    </group>
 
                     <field id="active" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Enable this Solution</label>
