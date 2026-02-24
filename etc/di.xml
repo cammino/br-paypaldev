@@ -3,7 +3,7 @@
     <preference for="PayPalBR\PayPal\Api\WebHookManagementInterface" type="PayPalBR\PayPal\Model\WebHookManagement"/>
     <preference for="PayPalBR\PayPal\Api\EventsInterface" type="PayPalBR\PayPal\Model\Webhook\Event"/>
     <preference for="PayPalBR\PayPal\Gateway\Transaction\Base\Config\ConfigInterface" type="PayPalBR\PayPal\Gateway\Transaction\Base\Config\Config"/>
-    <preference for="PayPalBR\PayPal\Api\PayPalPlusRequestDataProviderInterface" type="PayPalBR\PayPal\Gateway\Transaction\PayPalPlus\ResourceGateway\Create\RequestDataProvider"/>
+    <preference for="PayPalBR\PayPal\Api\PayPalPlusRequestDataProviderInterface" type="PayPalBR\PayPal\Gateway\Transaction\PayPalExpressCheckout\ResourceGateway\Create\RequestDataProvider"/>
     <preference for="Magento\Sales\Block\Order\Totals" type="PayPalBR\PayPal\Block\Order\Totals"/>
 
     <!-- PayPalExpressCheckout Adapter -->
