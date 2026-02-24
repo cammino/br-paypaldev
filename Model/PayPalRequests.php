@@ -1037,14 +1037,18 @@ class PayPalRequests
     protected function logger($identifier, $httpMethod, $headers, $payload, $httpStatusCode = null)
     {
         $this->loggerHandler->setFileName('paypalbr');
+
         $this->customLogger->info('######################################################');
-        $this->customLogger->info($identifier);
-        $this->customLogger->info($httpMethod);
-        if ($httpStatusCode) {
-            $this->customLogger->info($httpStatusCode);
+        $this->customLogger->info((string)$identifier);
+        $this->customLogger->info((string)$httpMethod);
+
+        if ($httpStatusCode !== null) {
+            $this->customLogger->info((string)$httpStatusCode);
         }
-        $this->customLogger->info($headers);
-        $this->customLogger->info($payload);
+
+        $this->customLogger->info('Headers', ['headers' => $headers]);
+        $this->customLogger->info('Payload', ['payload' => $payload]);
+
         $this->customLogger->info('######################################################');
     }
 
