@@ -381,6 +381,8 @@ class ConfigProvider
      */
     public function isLoginPayPalActive()
     {
+        return false;
+        
         $active_form_login = $this->scopeConfig->getValue(self::XML_PATH_PAYPAL_LOGIN, ScopeInterface::SCOPE_STORE);
         $active_module = $this->scopeConfig->getValue(self::XML_PATH_ACTIVE, ScopeInterface::SCOPE_STORE);
 
